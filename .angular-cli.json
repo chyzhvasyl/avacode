@@ -19,9 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",  "C:/Users/limp/WebstormProjects/avacode/avacode/node_modules/bootstrap/dist/css/bootstrap.css", "C:/Users/limp/WebstormProjects/avacode/avacode/node_modules/bootstrap/dist/css/bootstrap-grid.css",
+        "C:/Users/limp/WebstormProjects/avacode/avacode/node_modules/bootstrap/dist/css/bootstrap-reboot.css"
       ],
-      "scripts": [],
+      "scripts": ["C:/Users/limp/WebstormProjects/avacode/avacode/node_modules/bootstrap/dist/js/bootstrap.js", "C:/Users/limp/WebstormProjects/avacode/avacode/node_modules/jquery/dist/jquery.slim.js", "C:/Users/limp/WebstormProjects/avacode/avacode/node_modules/popper.js/dist/popper.js" ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

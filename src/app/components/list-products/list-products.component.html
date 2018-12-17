@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="float-right">
+    <b>total price:</b> {{this.totalPrice + ' UAH'}}
+  </div>
+
+  <div class="row ">
+
+    <div>
+    <div class="dropdown ">
+
+      <img class="img-fluid" style="cursor: pointer"   data-toggle="dropdown" id="dropdownMenuButton" width="50px" src="../../../assets/images/shopping_cart.png">
+      <span class="badge badge-light">{{cart.length}}</span>
+
+      <div   class="dropdown-menu dropdown_menu"   aria-labelledby="dropdownMenuButton">
+        <form>
+          <div class="list-group">
+            <div class="lessons-list" *ngIf="cart.length; else emptyCart">
+              <div *ngFor="let cartItem of cart"  class="list-group-item list-group-item-action">
+                {{cartItem.name}}
+
+                <span class="badge badge-light">{{cartItem.count}}</span>
+
+
+              </div>
+            </div>
+            <ng-template #emptyCart>
+              <img class="img-fluid"   src="../../../assets/images/empty.jpg">
+            </ng-template>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mt-5 container">
+ <h4 align="center">list-products works!</h4>
+  <div   class="form-group  mt-2">
+    <input  type="text" [(ngModel)]="query"       name="content"  class="form-control"    placeholder="find product">
+  </div>
+  <div *ngIf="products.length" class="row">
+    <div *ngFor="let product of products | productFilter : query" class="col-sm-4" >
+      <div class="product_card padding_card">
+        <img class="img-fluid" src="{{product.image}}">
+          <h4><b>{{product.name }}</b></h4>
+          <p>{{product.category}}</p>
+
+        <button (click)="addProduct(product)" type="button" class="btn btn-success">Add to cart</button>
+        <a class="badge badge-info float-right"   [routerLink]="['/details', product.id]">
+          детали ...
+        </a>
+        <p class="card-text"><small class="text-muted">{{product.price + ' UAH'}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

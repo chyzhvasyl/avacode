@@ -1,0 +1,19 @@
+{
+  "/home": {
+    "get": {
+      "data": [
+        {"id":"1", "name": "Acer Flagship",  "category": "Electronics",  "price": "200",  "description": "This stylish Chromebook’s 15.6-inch anti-glare screen is the biggest screen you can get on a Chromebook.", "image": "../../../assets/images/notebook.jpg"},
+        {"id":"2", "name": "Radio Flyer",  "category": "Sports",  "price": "250",  "description": "Take a ride on the Deluxe Big Flyer, the performance trike. This award-winning trike is designed to be your child's favorite new ride!", "image": "../../../assets/images/vel.JPG"},
+        {"id":"3", "name": "BUTTONED DOWN Men's Classic Silk ",  "category": "Clothes",  "price": "22",  "description": "An Amazon brand - This classic necktie in luxurious silk with a textured feel brings must-have style to everyday business attire", "image": "../../../assets/images/silk.jpg"},
+        {"id":"4", "name": "The Legend of Zelda",  "category": "Games",  "price": "65",  "description": "Explore the wilds of Hyrule any way you like—anytime, anywhere! - Climb up towers and mountain peaks in search of new destinations, then set your own path to get there and plunge into the wilderness.", "image": "../../../assets/images/game.png"},
+        {"id":"5", "name": "Turtle Beach Recon 200 ",  "category": "Headsets",  "price": "65",  "description": "Powerful amplified audio - immerse yourself in your games with rechargeable battery-powered amplified sound from your Xbox One and PS4", "image": "../../../assets/images/beats.jpg"},
+        {"id":"6", "name": "Say You're Sorry",  "category": "Books",  "price": "2",  "description": "Tessa was the ultimate girl next door, and the community is outraged by her death.", "image": "../../../assets/images/book.jpg"}
+      ]
+    },
+    "post": {
+      "data": [
+        {"id":1,"name": "Steve Jobs"}
+      ]
+    }
+  }
+}

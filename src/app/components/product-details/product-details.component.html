@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div  *ngIf="products" class="flip-card mt-5">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img class="img-fluid" src="{{products.image}}" >
+        </div>
+        <div class="flip-card-back">
+          <h1>{{products.name}}</h1>
+          <p>{{products.category}}</p>
+          <p>{{products.price}}</p>
+          <p>{{products.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
